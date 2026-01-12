@@ -1,0 +1,32 @@
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    
+z-index: 5;
+background: rgba(121, 235, 232, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+-webkit-backdrop-filter: blur(4.4px);
+border: 1px solid rgba(121, 235, 232, 0.3);
+}
+.name1{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: #62bafe;
+  letter-spacing: 1px;
+  text-decoration: none; 
+    margin-left:4rem ;
+}
+.nav-items{
+    font-family: 'Work sans', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 2rem;
+    display: flex;
+    gap: 2rem;
+    text-decoration: none; 
+}

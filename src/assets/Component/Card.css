@@ -1,0 +1,69 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ height: 65vh;
+ width: 100%;
+
+  background-size: cover;       /* fill container */
+  background-position: center;  /* keep focus centered */
+  background-repeat: no-repeat; /* no tiling */
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */         
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.photo { 
+    width: 200px;
+  height: 200px;
+  margin-left: 3rem;
+  border-radius: 50%;
+  flex-shrink: 0; 
+
+}
+
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;                 /* space between name, role, description */
+  max-width: 60%;             /* keeps text contained next to the photo */
+}
+.texts img{
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;            /* larger for emphasis */
+  font-weight: 700;           /* bold and confident */
+ color: #eaf6ff;          /* primary theme color */
+  letter-spacing: 0.5px;      /* subtle spacing for polish */
+}
+
+.role {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;          /* smaller than name, but readable */
+  font-weight: 500;
+   color: #9fd5ff;          /* dark gray for contrast */
+  letter-spacing: 0.3px;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+   color: #aac6dd;         /* softer gray for readability */
+  line-height: 1.6;           /* improves readability for longer text */
+}
