@@ -4,6 +4,14 @@ import projectimg  from './assets/project1.png'
 import Nav from './assets/Component/Nav.jsx'
 import Card from './assets/Component/Card.jsx'
 import ProjectCard from './assets/Component/ProjectCard.jsx'
+import ReactGA from "react-ga4";
+
+// Initialize GA
+ReactGA.initialize("G-3Q8DEXJ2VE");
+
+// Send pageview for initial load
+ReactGA.send("pageview");
+
 function App() {
   const [count, setCount] = useState(0)
 
