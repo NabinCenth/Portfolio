@@ -5,7 +5,7 @@ import Typewriter from './Typewriter';
 import cardBg from '../background.jpg';
 function Card() {
   return (
-  <div className="card-container" style={{ backgroundImage: `url(${cardBg})` }}>
+  <div className="card-container" style={ { backgroundImage: `url(${cardBg})` }}>
         
       <div className="photo">
   
