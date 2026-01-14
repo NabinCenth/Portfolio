@@ -2,31 +2,47 @@
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
+justify-content: space-between;
     height: 10vh;
-    width: 100%;
-    
-z-index: 5;
-background: rgba(121, 235, 232, 0.24);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.4px);
--webkit-backdrop-filter: blur(4.4px);
-border: 1px solid rgba(121, 235, 232, 0.3);
+    width: 98vw;
+    z-index: 5;
+    background: rgba(121, 235, 232, 0.24); /* nice glass effect */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(121, 235, 232, 0.3);
+   
 }
-.name1{
-    font-size: 1.5rem;
+.name1 {
+    font-size: 1.6rem; /* slightly bigger */
     font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  color: #62bafe;
-  letter-spacing: 1px;
-  text-decoration: none; 
-    margin-left:4rem ;
+    font-weight: 700; /* use numeric weight instead of 'bolder' */
+    color: #1abc9c; /* modern teal color */
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 3rem; /* remove fixed margin */
+    padding-left: 2rem; /* better spacing using padding */
+    transition: color 0.3s ease; /* smooth hover color */
+    cursor: pointer;
 }
-.nav-items{
-    font-family: 'Work sans', 'Arial Narrow', Arial, sans-serif;
+
+.name1:hover {
+    color: #62bafe; /* changes color on hover */
+}
+.nav-items {
     margin-right: 2rem;
     display: flex;
     gap: 2rem;
-    text-decoration: none; 
+}
+.nav-items a {
+    color: #1abc9c;
+    font-family: 'Work Sans', Arial, sans-serif;
+    display: flex;
+ 
+    text-decoration: none;
+}
+.nav-items a:hover {
+    color: #128a72;
+    transition: color 0.3s ease;
 }

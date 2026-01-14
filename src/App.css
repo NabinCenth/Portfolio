@@ -1,11 +1,26 @@
- .projects h3{
-    font-family: 'times new roman', sans-serif;
+.projects h3 {
+    font-family: 'Times New Roman', serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
- }
- .projects p{
-    font-family: "work sans", sans-serif;
+        color: #1abc9c;
+    margin-bottom: 1rem; /* add spacing below title */
+}
+
+.projects p {
+    font-family: 'Work Sans', sans-serif;
     font-size: 1.2rem;
     text-align: center;
- }
+    margin-bottom: 2rem; /* spacing before cards */
+    color: #555; /* subtle text color for readability */
+}
+.card-container { 
+    margin-top: 2rem;
+}
+.projectslist {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* space between project cards */
+    flex-wrap: wrap; /* wrap to next line on smaller screens */
+    padding: 0 2rem; /* horizontal padding for smaller screens */
+}

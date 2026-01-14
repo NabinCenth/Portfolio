@@ -3,7 +3,7 @@ import "./Nav.css";
 function Nav() {
   return (
     <nav className="nav">
-      <div className="name1">Nabin Pokharel</div>
+      <div className="name1">NabinCenth</div>
       <div className="nav-items">
         <a href="#" className="nav-item">Home</a>
         <a href="#" className="nav-item">About</a>

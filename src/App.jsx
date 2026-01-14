@@ -18,8 +18,16 @@ function App() {
     <h3>Projects
     </h3>
     <p>A showcase of engineering precision and aesthetic clarity.</p></div>
-<ProjectCard title="ChatVibes" image={projectimg} description="It is a well known website for chatting" link='https://chat-vibes.netlify.app/'/>
-    </>
+<div className="projectslist"> 
+  <ProjectCard className='chatvibes' title="ChatVibes"
+   image={projectimg} 
+   description="Real-time chat app using React and a Node/Express socket server. Supports instant messaging with a simple and clean UI"
+  link="https://chat-vibes.netlify.app/"
+  />
+ 
+ </div>   
+ 
+  </>
   )
 }
 

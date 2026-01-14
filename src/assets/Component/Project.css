@@ -1,30 +1,33 @@
 /* Custom Variables for Nabin's Brand */
 :root {
-  --primary-teal: #1abc9c;
-  --text-dark: #2c3e50;
-  --text-muted: #7f8c8d;
-  --bg-white: #ffffff;
-  --card-radius: 32px; /* Large radius for that 'circular' feel */
+  --primary-teal: #1abc9c;       /* Button / accent color */
+  --primary-teal-hover: #16a085; /* Hover color */
+  --text-dark: #eaf6ff;           /* Matches your bluish-white mountain theme */
+  --text-muted: #aac6dd;          /* Softer text for description */
+  --bg-card: #0b1d2a;             /* Dark card background to match theme */
+  --card-radius: 32px;            /* Large radius for that 'circular' feel */
   --transition-speed: 0.4s;
 }
 
+/* Project Card */
 .project-card {
-  background-color: var(--bg-white);
+  background: linear-gradient(145deg, #0b1d2a, #132b45); /* Bluish mountain theme gradient */
   border-radius: var(--card-radius);
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   max-width: 380px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);      /* Slight blur for frosted look */
   transition: transform var(--transition-speed) cubic-bezier(0.175, 0.885, 0.32, 1.275),
               box-shadow var(--transition-speed) ease;
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05); /* subtle border to blend with bg */
   margin-bottom: 20px;
+  color: var(--text-dark);
 }
 
 /* Hover Effect: Card Lift */
 .project-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 20px 40px rgba(26, 188, 156, 0.15); /* Tinted shadow on hover */
+  box-shadow: 0 20px 50px rgba(26, 188, 156, 0.25); /* Teal tinted glow on hover */
 }
 
 /* Image Wrapper */
@@ -70,11 +73,13 @@
 
 /* Rounded Button */
 .view-btn {
-  display: inline-block;
+ display: flex;
+
+  justify-content: center;
   background-color: var(--primary-teal);
   color: #ffffff;
   padding: 12px 28px;
-  border-radius: 50px; /* Fully circular button */
+  border-radius: 50px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -82,10 +87,12 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .view-btn:hover {
-  background-color: #16a085;
+  background-color: var(--primary-teal-hover);
   box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
   letter-spacing: 0.5px;
+  scale: 1.05;
 }
