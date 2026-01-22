@@ -53,6 +53,7 @@
   font-weight: 700;           /* bold and confident */
  color: #eaf6ff;          /* primary theme color */
   letter-spacing: 0.5px;      /* subtle spacing for polish */
+  margin: 0px;
 }
 
 .role {
@@ -61,6 +62,7 @@
   font-weight: 500;
    color: #9fd5ff;          /* dark gray for contrast */
   letter-spacing: 0.3px;
+  margin:0px;
 }
 
 .description {
@@ -68,4 +70,5 @@
   font-size: 1rem;
    color: #aac6dd;         /* softer gray for readability */
   line-height: 1.6;           /* improves readability for longer text */
+  margin: 0px;
 }

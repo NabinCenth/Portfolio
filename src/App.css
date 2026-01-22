@@ -1,4 +1,4 @@
-.projects h3 {
+#project-heading {
     font-family: 'Times New Roman', serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -7,7 +7,7 @@
     margin-bottom: 1rem; /* add spacing below title */
 }
 
-.projects p {
+#project-descrip {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.2rem;
     text-align: center;
