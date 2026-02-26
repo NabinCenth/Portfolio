@@ -2,10 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 65vh;
-  width: 98vw;
-  padding: 1rem;
-
+ min-height: 70vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

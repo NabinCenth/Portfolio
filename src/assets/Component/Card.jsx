@@ -6,7 +6,7 @@ import cardBg from '../background.jpg';
 
 function Card() {
   return (
-    <section className="card-container" style={{ backgroundImage: `url(${cardBg})` }}>
+    < section className="card-container" style={{ backgroundImage: `url(${cardBg})` }}>
       <div className="photo">
         {/* Added alt text and eager loading for LCP performance */}
         <img 

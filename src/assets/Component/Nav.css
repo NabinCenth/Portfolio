@@ -1,18 +1,17 @@
-.nav{
-    
+.nav {
     display: flex;
     align-items: center;
-justify-content: space-between;
-    height: 10vh;
-    width: 98vw;
-    z-index: 5;
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-   
+    justify-content: space-between;
+    min-height: 70px; /* Use min-height instead of fixed vh */
+    width: 100%;      /* Change from 98vw to 100% */
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    padding: 0 5%;
+    z-index: 100;
+    position: sticky; /* Keeps it at the top without overlapping content */
+    top: 0;
+    background: rgba(10, 27, 43, 0.8); /* Darker for better contrast */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .name1 {
     font-size: 1.6rem; /* slightly bigger */
@@ -45,4 +44,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .nav-items a:hover {
     color: #128a72;
     transition: color 0.3s ease;
+}
+@media (max-width: 600px){
+    .name1{
+        padding:0;
+        margin: 0;
+    }
+    .nav{
+        padding: 0;
+        margin: 0;
+    }
 }

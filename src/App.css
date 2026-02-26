@@ -19,8 +19,14 @@
 }
 .projectslist {
     display: flex;
-    justify-content: center;
-    gap: 2rem; /* space between project cards */
+    justify-content: space-around;
+    gap: 4rem; /* space between project cards */
     flex-wrap: wrap; /* wrap to next line on smaller screens */
     padding: 0 2rem; /* horizontal padding for smaller screens */
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
